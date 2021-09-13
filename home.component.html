@@ -1,0 +1,46 @@
+<div class="container">
+<div class="card bg-dark">
+<div class="games">
+    <div class="xyz" *ngFor="let game of games">
+    <div class="game  m-4 bg-dark" (click)="openGameDetails(game.id)">
+        <div class="game-thumb-container">
+            <img 
+            *ngIf="game.image_background"
+            src="{{game.image_background}}" alt="thumbnail" class="game-thumbnail" height="300px" width="300px">
+        </div>
+        <div class="card-footer">
+        <div class="game-description">
+            <p class="game-name text-light">{{game.name }}</p>
+           
+        </div>
+        <button class="btn btn-light " data-bs-target="#myModal" data-bs-toggle="modal"   >View</button>
+        <div class="modal" id=myModal>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    
+                        <div class="modal-header "> 
+                            <h1>{{game.name}}</h1>
+                        </div>   
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                            <img src="{{game.image_background}}" width="100%" height="400px"alt="">
+                        </div>
+                        <div class="desc col-sm-6 align-self-center">
+                        <h1><strong>
+                            Game name</strong>:{{game.name}}</h1>
+                        <h1 class="head text-dark"><strong>Game count</strong>:{{game.games_count}}</h1>
+               </div>
+                        </div>  
+                        </div>        
+                           
+
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>

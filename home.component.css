@@ -1,0 +1,21 @@
+
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 2000px;
+    margin: 20px auto;
+}
+.game{
+   
+    box-shadow: 4px 3px 8px 0px rgb(218, 206, 206);
+}
+
+.modal-header{
+    text-align: center;
+}
+.game-thumb-container:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(185, 180, 180, 0.12), 0 4px 8px rgba(218, 215, 215, 0.06);
+     
+}

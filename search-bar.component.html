@@ -1,0 +1,7 @@
+<div class="search-container w-100 bg-light align-items-center">
+    <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <span class="logo" routerLink="/">VGDB</span>
+        <input class="search-input" name="search"  placeholder="Search 50+ games" ngModel/>
+        <button class="search-button hover-overlay ripple shadow-1-strong rounded">Search</button>
+    </form>
+</div>
